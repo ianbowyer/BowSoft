@@ -2,8 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="licenses\LICENSE.txt" Pack="true" PackagePath=""/>
+  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="System.Text.Json" Version="8.0.4" />
