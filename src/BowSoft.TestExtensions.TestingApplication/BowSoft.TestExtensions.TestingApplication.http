@@ -1,0 +1,13 @@
+@BowSoft.TestExtensions.TestingApplication_HostAddress = http://localhost:5160/api/Tester
+
+GET {{BowSoft.TestExtensions.TestingApplication_HostAddress}}/ReturnsJsonObject/
+Accept: application/json
+
+###
+
+GET {{BowSoft.TestExtensions.TestingApplication_HostAddress}}/ReturnsHttpStatus/201
+Accept: application/json
+
+###
+GET {{BowSoft.TestExtensions.TestingApplication_HostAddress}}/ReturnsString/HowNowBrownCow
+Accept: application/json
